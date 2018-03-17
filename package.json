@@ -1,0 +1,27 @@
+{
+  "name": "homebridge-plugin-generic-switch",
+  "version": "0.0.1",
+  "description": "Expose a generic switch to Homebridge",
+  "license": "MIT",
+  "repository": "github:Firehed/homebridge-plugin-generic-switch",
+  "keywords": [
+    "homebridge-plugin",
+    "switch"
+  ],
+  "engines": {
+    "homebridge": ">=0.2.0",
+    "node": ">=0.12.0"
+  },
+  "dependencies": {
+    "node-fetch": "^1.7.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "eslint": "^4.14.0"
+  },
+  "scripts": {
+    "build": "babel index.js --out-dir=build"
+  },
+  "main": "build/index.js"
+}
